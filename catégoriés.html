@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Navigation | McDonald's</title>
+  <style>
+    /* Style de base */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFC107; /* Fond jaune */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    /* Conteneur de la navigation */
+    .navbar {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    /* Style des liens */
+    .navbar a {
+      display: block; /* Liens en colonne */
+      color: #b22216; /* Rouge McDonald's */
+      font-size: 2em; /* Taille de la police */
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px 0; /* Espacement entre les liens */
+      position: relative;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Ajout d'une ligne rouge sous les liens */
+    .navbar a::after {
+      content: ''; /* Élément visuel */
+      display: block;
+      width: 0;
+      height: 4px;
+      background-color: #b22216; /* Rouge */
+      margin: 5px auto 0;
+      transition: width 0.3s ease;
+    }
+
+    /* Effet au survol */
+    .navbar a:hover {
+      color: #b22216; /* Rouge foncé */
+      transform: scale(1.1); /* Agrandir légèrement */
+    }
+
+    /* Animation de la ligne rouge au survol */
+    .navbar a:hover::after {
+      width: 100%; /* Ligne rouge pleine largeur */
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar a {
+        font-size: 1.5em; /* Taille réduite sur les petits écrans */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar a {
+        font-size: 1.2em; /* Plus petit pour les très petits écrans */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="burger-wrap.html">Burgers & Wraps</a>
+    <a href="happy-meal.html">Happy Meal</a>
+    <a href="petites-faims.html">Petites Faims</a>
+    <a href="desserts.html">Desserts</a>
+    <a href="frites.html">Frites</a>
+    <a href="boissons.html">Boissons</a>
+    <a href="salades.html">Salades</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | McDonald's</title>
+  <style>
+    /* Style de base */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFC107; /* Fond jaune */
+      color: #333;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Style pour le logo */
+    .logo {
+      margin-top: 20px;
+      max-width: 200px;
+      height: auto;
+    }
+
+    /* Style pour le titre */
+    .title {
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #b22216; /* Rouge typique de McDonald's */
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* Style pour le lien */
+    .link {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: white;
+      background-color: #b22216;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .link:hover {
+      background-color: #b22216;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2em;
+      }
+
+      .link {
+        font-size: 1em;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.5em;
+      }
+
+      .link {
+        font-size: 0.9em;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo McDonald's -->
+  <img src="mcdonalds (1).png" alt="Logo McDonald's" class="logo">
+
+  <!-- Titre principal -->
+  <h1 class="title">Bienvenue chez McDonald's</h1>
+
+  <!-- Lien vers "Non Catégorisé" -->
+  <a href="catégoriés.html" class="link">Explorer Non Catégorisé</a>
+
+ 
+</body>
+</html>
